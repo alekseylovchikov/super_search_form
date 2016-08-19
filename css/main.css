@@ -53,11 +53,18 @@ button[type="submit"] {
     font-family: "Roboto", "Ubuntu", "Arial", sans-serif;
     font-weight: bolder;
 }
+button[disabled="disabled"] {
+    cursor: no-drop;
+    background-color: rgba(234, 97, 0, .5);
+}
 button[type="submit"]:focus {
     outline: 0;
 }
 button[type="submit"]:hover {
     background-color: #ff710d;
+}
+button[disabled="disabled"]:hover {
+    background-color: rgba(234, 97, 0, .5);
 }
 .container {
     max-width: 600px;
