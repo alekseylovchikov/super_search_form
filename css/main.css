@@ -130,3 +130,27 @@ form {
 .search-result:hover {
     background-color: #f9f9f9;
 }
+
+@media only screen and (max-width: 623px) {
+    .container {
+        margin: 0 2%;
+    }
+
+    input[type="text"] {
+        width: 84%;
+    }
+
+    button[type="submit"] {
+        width: 16%;
+    }
+}
+
+@media only screen and (max-width: 536px) {
+    input[type="text"] {
+        width: 80%;
+    }
+
+    button[type="submit"] {
+        width: 20%;
+    }
+}
