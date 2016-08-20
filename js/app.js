@@ -45,11 +45,9 @@ $(document).ready(function() {
                         }, 200);
                     })
                     .html(
-                        '<ul>' +
-                        '<li class="search-result">' + txt + ' <span class="link">in <a href="//super‐analytics.com?query=' + txt + '" target="_blank">Phrase Overview</a></span></li>' +
-                        '<li class="search-result">' + onlyDomain + ' <span class="link">in <a href="//super‐analytics.com?query=' + onlyDomain + '" target="_blank">Domain Overview</a></span></li>' +
-                        '<li class="search-result">' + onlyDomain + ' <span class="link">in <a href="//super‐analytics.com?query=' + onlyDomain + '" target="_blank">URL Overview</a></span></li>' +
-                        '</ul>');
+                        '<span class="search-result">' + txt + ' <span class="link">in <a href="//super‐analytics.com?query=' + txt + '" target="_blank">Phrase Overview</a></span></span>' +
+                        '<span class="search-result">' + onlyDomain + ' <span class="link">in <a href="//super‐analytics.com?query=' + onlyDomain + '" target="_blank">Domain Overview</a></span></span>' +
+                        '<span class="search-result">' + onlyDomain + ' <span class="link">in <a href="//super‐analytics.com?query=' + onlyDomain + '" target="_blank">URL Overview</a></span></span>');
             }
         } else {
             helpers.css({display: 'none'});
